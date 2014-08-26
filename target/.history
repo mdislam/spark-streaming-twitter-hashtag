@@ -23,3 +23,8 @@ exit
 clean
 package
 run local[2] obama
+clean
+run local[2] obama
+clean
+package
+run local[2] obama ALS

@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/home/mdislam/spark_cc/projects/twitterstreaming/}twitterstreaming...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/mdislam/github/spark-streaming-twitter-hashtag/}spark-streaming-twitter-hashtag...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: twitterpopulartags#twitterpopulartags_2.10;0.1.0[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for twitterpopulartags#twitterpopulartags_2.10;0.1.0 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies twitterpopulartags#twitterpopulartags_2.10;0.1.0->org.scala-lang#scala-library;2.10.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4026c0e9[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4b3baa3f[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	local: revision in cache: org.scala-lang#scala-library;2.10.3[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.3 in sbt-chain[0m
@@ -9598,19 +9598,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.3!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.3!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4295ms :: artifacts dl 86ms[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 compile produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 runtime produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 test produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 provided produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 optional produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 compile-internal produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 runtime-internal produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 test-internal produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 plugin produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 sources produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 docs produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 pom produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 scala-tool produced in /home/mdislam/spark_cc/projects/twitterstreaming/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4295ms resolve - 86ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4177ms :: artifacts dl 101ms[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 compile produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 runtime produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 test produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 provided produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 optional produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 compile-internal produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 runtime-internal produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 test-internal produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 plugin produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 sources produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 docs produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 pom produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for twitterpopulartags#twitterpopulartags_2.10;0.1.0 scala-tool produced in /home/mdislam/github/spark-streaming-twitter-hashtag/target/resolution-cache/reports/twitterpopulartags-twitterpopulartags_2.10-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (4177ms resolve - 101ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
