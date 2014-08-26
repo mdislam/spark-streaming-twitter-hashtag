@@ -1,0 +1,25 @@
+clean
+package
+exit
+clean
+package
+run TwitterPopularTags O9OCPLFT5IDMqdqKFZKGcYpJn Rvil5TfqAp4ufMVr0vpOkKoLVUxUnJjN1Nsqzilnfe3p3wLgVW 1919544354-J5HXw3P4AGdqQaJit5whdeVd1aZCeCRPwIjuDH8 Y724hhIf0R3dqxuFMYB7gJheGQaX8EVtZQPbQ15no3Z18 icebuket
+exit
+clean
+package
+run
+run TwitterPopularTags
+run TwitterPopularTags Obama
+run spark://localhost:7077 Obama
+clean
+sbt clean
+package
+run
+run local[2] Obama
+run local[2] Obama ISIS ALSICE 2>logerr.err
+clean
+run local[2] Obama ISIS ALSICE $@ 2>logerr.err
+exit
+clean
+package
+run local[2] obama
