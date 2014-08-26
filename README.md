@@ -22,3 +22,4 @@ How to Run
 
 Please note that, I have run this only in local machine. Forgot to run in the ukko cluster. The arguments of run should be spark://ukkoXXX:7077 [filter1] [filter2] ... ...
 
+Sample Output is added in a separate text file. Unfortunately the program is needed to be stopped by Ctrl + C :-(
