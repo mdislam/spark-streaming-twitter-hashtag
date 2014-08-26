@@ -14,7 +14,9 @@ How to Run
 
 4. run following commands
     > clean
+
     > package
+    
     > run local[2] obama ALSIce
 
 
