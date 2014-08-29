@@ -12,7 +12,7 @@ import org.apache.spark.streaming.twitter._
 object TwitterPopularTags {
 
   def main(args: Array[String]) {
-    if (args.length < 2) {
+    if (args.length < 1) {
       System.err.println("Usage: sbt 'run <master> " + "[filter1] [filter2] ... [filter n]"+ "'")
       System.exit(1)
     }
@@ -24,13 +24,27 @@ object TwitterPopularTags {
     System.setProperty("twitter4j.oauth.consumerSecret", "Rvil5TfqAp4ufMVr0vpOkKoLVUxUnJjN1Nsqzilnfe3p3wLgVW")
     System.setProperty("twitter4j.oauth.accessToken", "1919544354-J5HXw3P4AGdqQaJit5whdeVd1aZCeCRPwIjuDH8")
     System.setProperty("twitter4j.oauth.accessTokenSecret", "Y724hhIf0R3dqxuFMYB7gJheGQaX8EVtZQPbQ15no3Z18")
-
     
 
     val ssc = new StreamingContext("local[2]", "TwitterPopularTags", Seconds(2),
       System.getenv("SPARK_HOME"), StreamingContext.jarOfClass(this.getClass))
-    val stream = TwitterUtils.createStream(ssc, None, filters)
+    val stream = TwitterUtils.createStream(ssc, None, filters)    
+    println("===Direct Stream Print===")
+    // print the whole stream
+    stream.foreachRDD(rdd=>rdd.foreach(println))
+    
+    // user details
+    val users = stream.map(userJson => userJson.getUser())
+    val usersCol = stream.map(user => user.getUser().getName()+ "@" + user.getUser().getLocation() + "@" + user.getUser().getFollowersCount() + "@" + user.getUser().getFriendsCount() + "@" + user.getUser().getFavouritesCount())
+    println("===User Details===")
+    usersCol.foreachRDD(rdd=>rdd.foreach(println))
+    
+    // tweet details
+    val statuses = stream.map(tweet => tweet.getGeoLocation())
+    println("===Tweet Details===")
+    statuses.foreachRDD(rdd=>rdd.foreach(println))
 
+    // getting the hashtags
     val hashTags = stream.flatMap(status => status.getText.split(" ").filter(_.startsWith("#")))
 
     val topCounts60 = hashTags.map((_, 1)).reduceByKeyAndWindow(_ + _, Seconds(60))
@@ -40,7 +54,6 @@ object TwitterPopularTags {
     val topCounts10 = hashTags.map((_, 1)).reduceByKeyAndWindow(_ + _, Seconds(10))
                      .map{case (topic, count) => (count, topic)}
                      .transform(_.sortByKey(false))
-
 
     // Print popular hashtags
     topCounts60.foreachRDD(rdd => {
